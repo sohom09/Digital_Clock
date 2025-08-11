@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Digital Clock with Seconds Ring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <h1>🕒 Digital Clock</h1>
+
+        <!-- Clock with SVG ring -->
+        <div class="clock-ring">
+            <svg width="200" height="200">
+                <circle cx="100" cy="100" r="90" stroke="#222" stroke-width="8" fill="none"/>
+                <circle id="secondsRing" cx="100" cy="100" r="90" stroke="cyan" stroke-width="8" fill="none"
+                        stroke-linecap="round" stroke-dasharray="565.48" stroke-dashoffset="565.48"/>
+            </svg>
+            <div id="clock"></div>
+        </div>
+
+        <div id="date"></div>
+        <button id="toggleFormat">Switch to 24-Hour</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
